@@ -1,0 +1,7 @@
+<?php
+
+$Config[] = [
+    'title' => 'CMS',
+]
+
+?>
