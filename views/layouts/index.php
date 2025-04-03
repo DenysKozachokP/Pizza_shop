@@ -5,15 +5,20 @@
  * @license MIT
  */
 
+
+include 'cookie-popup.php';
+
 use models\Users;
 use core\Core;
+
 /**@var string $Title */
 /**@var string $Content */
+
+
 if (empty($Title))
   $Title = '';
 if (empty($Content))
   $Content = '';
-
 ?>
 <!DOCTYPE html>
 <html lang="uk">
@@ -39,6 +44,7 @@ if (empty($Content))
           <?php if (Users::IsUserLoged()) :?>
           <li><a href="/basket/index" class="nav-link px-2 text-white">Кошик</a></li>
           <?php endif;?>
+          <li><a href="/site/privacy" class="nav-link px-2 text-secondary">Privacy Policy</a></li>
         </ul>
         
         <div class="text-end">

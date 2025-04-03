@@ -87,14 +87,14 @@ Website with license text: [MIT] (https://opensource.org/license/MIT)
 **GNU General Public License v3.0** (LICENSE)
 Website with license text: [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html#license-text).
 ## Third-party technology licenses
-**WAMP Server**:
--**Apache HTTP Server**. (LICENSE)
+**WAMP Server**
+**Apache HTTP Server** (LICENSE)
 Website with license text: [Apache License 2.0](https://www.apache.org/licenses/)
--**GNU General Public License v2.0 (MySQL)**. (LICENSE)
+**GNU General Public License v2.0 (MySQL)**. (LICENSE)
 Website with license text: [GNU GPLv2](https://www.mysql.com/about/legal/licensing/)
--**PHP License 3.01**. (LICENSE)
+**PHP License 3.01** (LICENSE)
 Website with license text: [PHP License 3.01](https://www.php.net/license/)
--**phpMyAdmin**. (LICENSE)
+**phpMyAdmin** (LICENSE)
 Website with license text: [GNU GPLv2](https://www.phpmyadmin.net/license/)
 ---
 
@@ -104,6 +104,16 @@ GitHub: **[github.com/yourusername](https://github.com/DenysKozachokP/Pizza_shop
 Email: **ipz224_kdp@student.ztu.edu.ua**
 
 ---
+##  **Website screenshots**
+
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_1.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_2.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_3.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_4.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_5.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_6.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_7.jpg)
+
 
 ##  **Conclusion**
 This pizzeria website provides basic online store functionality with the ability to view products, register users, and place orders through a cart. The system has a clear structure and can be expanded with additional functionality.
