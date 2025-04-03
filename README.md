@@ -116,6 +116,13 @@ Email: **ipz224_kdp@student.ztu.edu.ua**
 
 ## **Comand for view documentation**
 
+example documentation
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/doc1.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/doc2.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/doc3.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/doc4.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/doc5.jpg)
+
 start docs\html\index.html
 
 ## **Swagger documentation**
