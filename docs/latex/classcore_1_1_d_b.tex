@@ -1,0 +1,97 @@
+\doxysection{core\textbackslash{}DB Class Reference}
+\hypertarget{classcore_1_1_d_b}{}\label{classcore_1_1_d_b}\index{core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_a692b9e2501478f66c3372ac03ecc0112}{\+\_\+\+\_\+construct}} (\$host, \$name, \$login, \$password)
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_a930a4f9959c8d4e449e2a883c7e90efa}{select}} (\$table, \$field, \$\mbox{\hyperlink{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996}{where}})
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_ada56e7eba9e3eda39a0b87a556aaa9c5}{select\+Without\+Where}} (\$table, \$field, \$\mbox{\hyperlink{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996}{where}}, \$Order\+By, \$wher\+Like)
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_aa00a5656dd6387b599720dcec675301c}{select\+Special\+Request}} (\$sql)
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_a6a4d8537eed301a6e654750cc6be7f08}{insert}} (\$table, \$row\+\_\+to\+\_\+insert)
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_a3d43abe98eb518b51cda73332e974a91}{delete}} (\$table, \$\mbox{\hyperlink{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996}{where}})
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_a2e2c940271f4b0d62d67715ab2bcf785}{update}} (\$table, \$row\+\_\+to\+\_\+update, \$\mbox{\hyperlink{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996}{where}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_a9ea18089fcfacadd9e80ce9c026bf00d}{\$pdo}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996}{where}} (\$where)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcore_1_1_d_b_a692b9e2501478f66c3372ac03ecc0112}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_a692b9e2501478f66c3372ac03ecc0112} 
+core\textbackslash{}\+DB\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$name}{, }\item[{}]{\$login}{, }\item[{}]{\$password}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1_d_b_a3d43abe98eb518b51cda73332e974a91}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!delete@{delete}}
+\index{delete@{delete}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_a3d43abe98eb518b51cda73332e974a91} 
+core\textbackslash{}\+DB\+::delete (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$where}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcore_1_1_d_b_a6a4d8537eed301a6e654750cc6be7f08}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!insert@{insert}}
+\index{insert@{insert}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_a6a4d8537eed301a6e654750cc6be7f08} 
+core\textbackslash{}\+DB\+::insert (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$row\+\_\+to\+\_\+insert}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcore_1_1_d_b_a930a4f9959c8d4e449e2a883c7e90efa}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!select@{select}}
+\index{select@{select}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_a930a4f9959c8d4e449e2a883c7e90efa} 
+core\textbackslash{}\+DB\+::select (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$field}{, }\item[{}]{\$where}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcore_1_1_d_b_aa00a5656dd6387b599720dcec675301c}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!selectSpecialRequest@{selectSpecialRequest}}
+\index{selectSpecialRequest@{selectSpecialRequest}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{selectSpecialRequest()}{selectSpecialRequest()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_aa00a5656dd6387b599720dcec675301c} 
+core\textbackslash{}\+DB\+::select\+Special\+Request (\begin{DoxyParamCaption}\item[{}]{\$sql}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcore_1_1_d_b_ada56e7eba9e3eda39a0b87a556aaa9c5}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!selectWithoutWhere@{selectWithoutWhere}}
+\index{selectWithoutWhere@{selectWithoutWhere}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{selectWithoutWhere()}{selectWithoutWhere()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_ada56e7eba9e3eda39a0b87a556aaa9c5} 
+core\textbackslash{}\+DB\+::select\+Without\+Where (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$field}{, }\item[{}]{\$where}{, }\item[{}]{\$\+Order\+By}{, }\item[{}]{\$wher\+Like}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcore_1_1_d_b_a2e2c940271f4b0d62d67715ab2bcf785}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!update@{update}}
+\index{update@{update}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_a2e2c940271f4b0d62d67715ab2bcf785} 
+core\textbackslash{}\+DB\+::update (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$row\+\_\+to\+\_\+update}{, }\item[{}]{\$where}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!where@{where}}
+\index{where@{where}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_aa82f915e718721593f3d1b62a8807996} 
+core\textbackslash{}\+DB\+::where (\begin{DoxyParamCaption}\item[{}]{\$where}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcore_1_1_d_b_a9ea18089fcfacadd9e80ce9c026bf00d}\index{core\textbackslash{}DB@{core\textbackslash{}DB}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!core\textbackslash{}DB@{core\textbackslash{}DB}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{\$pdo}}
+{\footnotesize\ttfamily \label{classcore_1_1_d_b_a9ea18089fcfacadd9e80ce9c026bf00d} 
+core\textbackslash{}\+DB\+::\$pdo}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pizza\+\_\+shop/core/\mbox{\hyperlink{_d_b_8php}{DB.\+php}}\end{DoxyCompactItemize}

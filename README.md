@@ -114,6 +114,9 @@ Email: **ipz224_kdp@student.ztu.edu.ua**
 ![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_6.jpg)
 ![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/photo_7.jpg)
 
+## **Comand for view documentation**
+
+start docs\html\index.html
 
 ##  **Conclusion**
 This pizzeria website provides basic online store functionality with the ability to view products, register users, and place orders through a cart. The system has a clear structure and can be expanded with additional functionality.
