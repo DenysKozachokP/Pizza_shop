@@ -1,6 +1,6 @@
 <?php
 
-use models\Fishing;
+use models\Products;
 
 
 ?>
@@ -35,6 +35,6 @@ use models\Fishing;
     <div class="Contcard">
     <?php
 
-    echo Fishing::createContainerProd($_GET['id']);
+    echo Products::createContainerProd($_GET['id']);
     ?>
     </div>

@@ -69,9 +69,9 @@ class Model
     }
     public static function FindProdactsByLogin($login){
         $arr = Core::get()->db->selectSpecialRequest(
-            "SELECT `basket`.`id` AS idbasket, `fishing_prodacts`.`id`,`fishing_prodacts`.`name` , `fishing_prodacts`.`description`,`fishing_prodacts`.`discount`, `fishing_prodacts`.`price` , `fishing_prodacts`.`imgPath`, `fishing_prodacts`.`count`
-            FROM `fishing_prodacts` 
-            JOIN `basket` ON `fishing_prodacts`.`id` = `basket`.`id_equ` 
+            "SELECT `basket`.`id` AS idbasket, `products`.`id`,`products`.`name` , `products`.`description`,`products`.`discount`, `products`.`price` , `products`.`imgPath`
+            FROM `products` 
+            JOIN `basket` ON `products`.`id` = `basket`.`id_prod` 
             JOIN `users` ON `basket`.`login` = `users`.`login` 
             WHERE `users`.`login` = '{$login}';");
         if (count($arr) > 0)

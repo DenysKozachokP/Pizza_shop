@@ -29,24 +29,10 @@ if (empty($Content))
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="/site/index" class="nav-link px-2 text-secondary"><img src="/img/imgForAds/FishDream.jpg" style="width:70px;height:44px;"></a></li>
           <li><a href="/site/index" class="nav-link px-2 text-secondary">Головна</a></li>
-          <li><a href="/fishing/index?page=0" class="nav-link px-2 text-white">Все Для Риболовлі</a></li>
-          <li><a href="/fishing/discount?page=0" class="nav-link px-2 text-white">Акційні пропозиції</a></li>
+          <li><a href="/products/index?page=0" class="nav-link px-2 text-white">Асортимент</a></li>
           <?php if (Users::IsUserLoged()) :?>
           <li><a href="/basket/index" class="nav-link px-2 text-white">Кошик</a></li>
           <?php endif;?>
-          
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Для Адміна
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/fishing/add">Додати товар</a></li>
-              <li><a class="dropdown-item" href="/fishing/delete">Видалити товар</a></li>
-              <li><a class="dropdown-item" href="/fishing/update">Оновити товар</a></li>
-              <li><a class="dropdown-item" href="/purchase/index">Таблиця замовлень</a></li>
-              <li><a class="dropdown-item" href="/user/update">Редагування юзерів</a></li>
-            </ul>
-          </div>
         </ul>
         
         <div class="text-end">

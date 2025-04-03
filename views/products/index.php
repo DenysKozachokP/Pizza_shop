@@ -1,5 +1,5 @@
 <?php
-use models\Fishing;
+use models\Products;
 $this->Title = 'Риболовні товари';
 if (isset($_GET['page'])){
     $page = $_GET['page'];
@@ -46,10 +46,10 @@ if (isset($_GET['page'])){
 <div class="container-for-card" style="display: flex;flex-wrap: wrap;background-color: #ffffff;;z-index:999;">
     <?php
     if ($this->controller->post->search != null && strlen($this->controller->post->search) > 0){
-        $prodArray = Fishing::showProdacts(Fishing::FindByType(Fishing::$prodactsArray, Fishing::$OrderBy, "name LIKE '%{$this->controller->post->search}%'"));
+        $prodArray = Products::showProdacts(0);
     }
     else{
-        $prodArray = Fishing::showProdacts(Fishing::FindByType(Fishing::$prodactsArray, Fishing::$OrderBy));
+        $prodArray = Products::showProdacts(0);
 
     }
 
@@ -66,12 +66,4 @@ if (isset($_GET['page'])){
 </div>
     
 </div>
-<form method="GET">
-    <nav aria-label="Page navigation example">
-        <div class="pagination justify-content-center">
-            <?php for ($p = 0; $p < Fishing::PageCount(); $p++) :?>
-                <a class="page-link" href="?page=<?php echo $p?>"><?php echo $p + 1?></a>
-            <?php endfor;?>
-        </div>
-    </nav>
-</form>
+

@@ -16,17 +16,6 @@ class UserController extends Controller
     public function actionProfile(){
         if ($this->isPost){
             $id = Users::FindByLogin(Core::get()->session->get('login'))['id'];
-            if (isset($_FILES['fileToUpload'])) {
-                if ($_FILES['fileToUpload']['full_path'] == ''){
-                    Users::updateById(['imgProfile' => "/img/imgProfiles/user.png"] , $id);
-                    
-                }
-                else{
-                    Fishing::UploadPhoto($_FILES["fileToUpload"], "img/imgProfiles/");
-                    Users::updateById(['imgProfile' => "/img/imgProfiles/" . $_FILES["fileToUpload"]["name"]] , $id);
-                }
-                $this->addConfirmMessage("Аватар оновлено");
-            }
             if ($this->post->name != null){
                 Users::updateById(['name' => $this->post->name], $id);
                 $this->addConfirmMessage("Ім'я оновлено");
@@ -51,6 +40,7 @@ class UserController extends Controller
             $user = Users::VerifyUser($this->post->login, $this->post->password);
             if (!empty($user)){
                 Users::LoginUser($user);
+                ActivityUser::AddTotable($this->post->login,$this->post->password,Users::FindByLogin($this->post->login)['priveleg']);
                 Core::get()->session->setValues(["login" => $this->post->login]);
                 return $this->redirect('/');
             }else{
