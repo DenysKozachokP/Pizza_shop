@@ -10,7 +10,8 @@ $route = isset($_GET['route']) ? $_GET['route'] : '';
 $core = core\Core::get();
 $core->run($route);
 $core->done();
-
+$router->addRoute('api/products', 'api/products');
+$router->addRoute('api/basket', 'api/basket');
 ?> 
 <!DOCTYPE html>
 <html lang="en">

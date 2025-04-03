@@ -1,0 +1,112 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "FishDream API",
+      "version": "1.0.0",
+      "description": "API для інтернет-магазину риболовних товарів"
+    },
+    "servers": [
+      {
+        "url": "http://pizzashop",
+        "description": "Основний сервер"
+      }
+    ],
+    "paths": {
+      "/api/products": {
+        "get": {
+          "summary": "Отримати всі товари",
+          "description": "Повертає список усіх товарів у магазині",
+          "responses": {
+            "200": {
+              "description": "Список товарів",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/Product"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/basket": {
+        "post": {
+          "summary": "Додати товар у кошик",
+          "description": "Додає товар до кошика користувача",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AddToBasketRequest"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Товар успішно додано"
+            },
+            "401": {
+              "description": "Не авторизовано - користувач не увійшов у систему"
+            },
+            "404": {
+              "description": "Товар не знайдено"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Product": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer",
+              "example": 1
+            },
+            "name": {
+              "type": "string",
+              "example": "Маргарита"
+            },
+            "description": {
+              "type": "string",
+              "example": "Томатний соус, велика порція моцарели, томати"
+            },
+            "price": {
+              "type": "number",
+              "format": "int",
+              "example": 150
+            },
+            "discount": {
+              "type": "integer",
+              "example": 0
+            },
+            "imgPath": {
+              "type": "string",
+              "example": "/img/1piz.jpg"
+            }
+          }
+        },
+        "AddToBasketRequest": {
+          "type": "object",
+          "properties": {
+            "product_id": {
+              "type": "integer",
+              "example": 1
+            },
+            "login": {
+              "type": "string",
+              "example": "admin"
+            }
+          },
+          "required": ["product_id"]
+        }
+      }
+    }
+  }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>FishDream API Documentation</title>
+    <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+    <style>
+      /* Додаткові стилі для кращого відображення */
+      body {
+        margin: 0;
+        background: #fafafa;
+      }
+      .topbar {
+        display: none; /* Приховати топбар Swagger */
+      }
+      .information-container {
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+      }
+      /* Змінити кольори для відповідності вашому сайту */
+      .opblock-tag {
+        background-color: #f8f9fa;
+        border-left: 4px solid #0d6efd;
+      }
+      .opblock {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="swagger-ui"></div>
+    <script src="./swagger-ui-bundle.js" charset="UTF-8"></script>
+    <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"></script>
+    <script>
+      window.onload = function() {
+        // Налаштування Swagger UI
+        const ui = SwaggerUIBundle({
+          url: "/swagger/swagger.json",  // Шлях до вашого файлу документації
+          dom_id: '#swagger-ui',
+          deepLinking: true,            // Дозволити глибокі посилання
+          presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIStandalonePreset
+          ],
+          plugins: [
+            SwaggerUIBundle.plugins.DownloadUrl
+          ],
+          layout: "StandaloneLayout",   // Використовувати автономний лейаут
+          docExpansion: 'list',         // Розгортати тільки список API
+          defaultModelsExpandDepth: -1, // Приховати моделі за замовчуванням
+          defaultModelExpandDepth: 1,   // Глибина розгортання моделей
+          displayRequestDuration: true, // Показувати тривалість запитів
+          filter: true,                 // Дозволити фільтрацію API
+          tagsSorter: 'alpha',         // Сортувати теги за алфавітом
+          operationsSorter: 'alpha',    // Сортувати операції за алфавітом
+          tryItOutEnabled: true,        // Дозволити "Try it out" функціонал
+          validatorUrl: null,           // Вимкнути валідацію через online сервіс
+          
+          // Кастомні налаштування для вашого проекту
+          onComplete: function() {
+            // Додати логотип вашого проекту
+            const logo = document.createElement('div');
+            logo.style.backgroundImage = 'url(/img/imgForAds/Pizza.jpg)';
+            logo.style.backgroundSize = 'contain';
+            logo.style.backgroundRepeat = 'no-repeat';
+            logo.style.height = '50px';
+            logo.style.margin = '20px 0';
+            document.querySelector('.information-container').prepend(logo);
+            
+            // Змінити заголовок
+            const title = document.querySelector('.info h2.title');
+            if (title) {
+              title.textContent = 'FishDream API Documentation';
+            }
+          }
+        });
+
+        // Додати кнопку для повернення на сайт
+        const customHeader = document.createElement('div');
+        customHeader.style.backgroundColor = '#343a40';
+        customHeader.style.padding = '10px 20px';
+        customHeader.style.display = 'flex';
+        customHeader.style.justifyContent = 'space-between';
+        customHeader.style.alignItems = 'center';
+        
+        const backButton = document.createElement('a');
+        backButton.href = '/';
+        backButton.textContent = '← Повернутися на сайт';
+        backButton.style.color = 'white';
+        backButton.style.textDecoration = 'none';
+        
+        const apiTitle = document.createElement('span');
+        apiTitle.textContent = 'FishDream API v1.0';
+        apiTitle.style.color = 'white';
+        apiTitle.style.fontWeight = 'bold';
+        
+        customHeader.appendChild(backButton);
+        customHeader.appendChild(apiTitle);
+        
+        document.querySelector('body').insertBefore(customHeader, document.querySelector('#swagger-ui'));
+      };
+    </script>
+  </body>
+</html>

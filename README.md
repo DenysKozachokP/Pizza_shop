@@ -118,5 +118,55 @@ Email: **ipz224_kdp@student.ztu.edu.ua**
 
 start docs\html\index.html
 
+## **Swagger documentation**
+
+API Documentation for Pizza Shop
+1. Introduction
+This document describes the REST API for the Pizza Shop online store, which provides the following capabilities:
+
+Viewing the fishing product catalog
+
+Working with the shopping cart
+
+The API uses the OpenAPI 3.0 standard and is accessible via the Swagger UI.
+
+2. Base URL
+
+http://pizzashop/
+
+3. Authentication
+To use the API, you must:
+
+Register via /user/register
+
+Log in via /user/login
+
+Use the received session for authenticated requests
+
+4. Available endpoints
+4.1. Getting a list of products
+URL: /api/products
+Method: GET
+Description: Returns a list of all products in the store
+Example query:
+
+GET /api/products HTTP/1.1
+Host: virtualhost.local
+
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/postscrin1.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/postscrin2.jpg)
+
+
+4.2. Додавання товару до кошика
+URL: /api/basket
+Метод: POST
+Опис: Додає товар до кошика користувача
+Заголовки:
+
+Content-Type: application/json
+
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/getscrin1.jpg)
+![Image alt](https://github.com/DenysKozachokP/Pizza_shop/blob/main/img/Scrinshots/getscrin2.jpg)
+
 ##  **Conclusion**
 This pizzeria website provides basic online store functionality with the ability to view products, register users, and place orders through a cart. The system has a clear structure and can be expanded with additional functionality.
