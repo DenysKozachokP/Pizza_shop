@@ -1,4 +1,10 @@
 <?php
+/**
+ * @copyright 2025 Denys Kozachok
+ * @license GPL-3.0
+ * @license MIT
+ */
+
 use models\Users;
 use core\Core;
 /**@var string $Title */
@@ -27,7 +33,7 @@ if (empty($Content))
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="/site/index" class="nav-link px-2 text-secondary"><img src="/img/imgForAds/FishDream.jpg" style="width:70px;height:44px;"></a></li>
+          <li><a href="/site/index" class="nav-link px-2 text-secondary"><img src="/img/imgForAds/Pizza.jpg" style="width:70px;height:44px;"></a></li>
           <li><a href="/site/index" class="nav-link px-2 text-secondary">Головна</a></li>
           <li><a href="/products/index?page=0" class="nav-link px-2 text-white">Асортимент</a></li>
           <?php if (Users::IsUserLoged()) :?>

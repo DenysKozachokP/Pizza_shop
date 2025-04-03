@@ -1,11 +1,17 @@
 <?php
+/**
+ * @copyright 2025 Denys Kozachok
+ * @license GPL-3.0
+ * @license MIT
+ */
+
 namespace models;
 
 use core\Model;
 use core\Core;
 /**
  * @property int $id id
- * @property int $id_equ id продукту
+ * @property int $id_prod id продукту
  * @property string $login Логін
  */
 class Basket extends Model
@@ -17,10 +23,10 @@ class Basket extends Model
         return Basket::FindProdactsByLogin(Core::get()->session->get('login'));
     }
  
-    public static function AddIteamToBasket($id_equ, $login)
+    public static function AddIteamToBasket($id_prod, $login)
     {
         $basket = new Basket();
-        $basket->id_equ = $id_equ;
+        $basket->id_prod = $id_prod;
         $basket->login = $login;
         $basket->save();
     }
@@ -55,7 +61,6 @@ class Basket extends Model
                     <div class='quantity-control'>
                         <label for='InputCount' class='form-label'>Введіть кiлькість</label>
                         <input name='buyValue' id='InputCount' type='text' class='quantity-field' value='1'>
-                        <p>Максимум: {$row["count"]}</p>
                     </div>
                     <div class='d-flex'>
                         <button name='but' value='0' type='submit' class='btn btn-outline-secondary'>Видалити з кошику</button>

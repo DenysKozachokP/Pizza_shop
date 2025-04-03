@@ -1,0 +1,40 @@
+.container-for-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрує картки по горизонталі */
+}
+
+.card {
+    width: 500px; /* Ширина картки збільшена до 400 пікселів */
+    margin: 20px; /* Простір між картками */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додає тінь для кращого вигляду */
+    border-radius: 10px; /* Злегка округляє кути карток */
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-square-wrapper {
+    width: 150px; /* Ширина зображення */
+    height: 150px; /* Висота зображення */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shopping-cart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* рівномірно розподіляє картки на всій ширині контейнера */
+}

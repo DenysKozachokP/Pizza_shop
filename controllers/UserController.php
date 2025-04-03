@@ -1,4 +1,10 @@
 <?php
+/**
+ * @copyright 2025 Denys Kozachok
+ * @license GPL-3.0
+ * @license MIT
+ */
+
 namespace controllers;
 
 use core\Controller;
@@ -12,25 +18,6 @@ class UserController extends Controller
 {
     public function actionAdd(){
         return $this->render('views/user/add.php');
-    }
-    public function actionProfile(){
-        if ($this->isPost){
-            $id = Users::FindByLogin(Core::get()->session->get('login'))['id'];
-            if ($this->post->name != null){
-                Users::updateById(['name' => $this->post->name], $id);
-                $this->addConfirmMessage("Ім'я оновлено");
-            }if ($this->post->lastname != null){
-                Users::updateById(['lastname' => $this->post->lastname], $id);
-                $this->addConfirmMessage("Прізвище оновлено");
-            }if ($this->post->email != null){
-                Users::updateById(['email' => $this->post->email], $id);
-                $this->addConfirmMessage("Email оновлено");
-            }if ($this->post->number != null){
-                Users::updateById(['number' => $this->post->number], $id);
-                $this->addConfirmMessage("Номер телефону оновлено");
-            }
-        }
-        return $this->render();
     }
     public function actionLogin(){
         if (Users::IsUserLoged())
@@ -56,7 +43,6 @@ class UserController extends Controller
     }
     public function actionRegister()
     {
-        //Core::get()->session->setValues(["login" => 'admin']);
         if($this->isPost)
         {
             $user = Users::FindByLogin($this->post->login);
@@ -85,10 +71,6 @@ class UserController extends Controller
     public function actionRegistersuccsess()
     {
         return $this->render();
-    }
-    public function showErorrMess($errorMessages)
-    {
-        
     }
 }
 

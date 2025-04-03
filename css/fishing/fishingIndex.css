@@ -1,0 +1,41 @@
+.container-for-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* рівномірно розподіляє картки на всій ширині контейнера */
+}
+
+.card {
+    width: 220px;
+    margin-bottom: 20px; /* встановлює простір між картками у вертикальному напрямку */
+    margin-right: 20px;/* можна також додати margin-right, щоб встановити простір між картками у горизонтальному напрямку */
+}
+
+.card-img-top {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.containerFilter
+{
+    margin: 50px;
+    padding-bottom: 50px;
+}
+.containerFilter {
+    padding: 20px;
+    background-color: #fafce2;
+    border-radius: 8px;
+   
+}
+
+.containerFilter .btn-group {
+    margin-bottom: 15px;
+}
+
+.containerFilter .form-control {
+    width: 100%;
+}
+
+.containerFilter .btn {
+    margin-right: 5px;
+}

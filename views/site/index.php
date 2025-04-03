@@ -1,4 +1,10 @@
 <?php
+/**
+ * @copyright 2025 Denys Kozachok
+ * @license GPL-3.0
+ * @license MIT
+ */
+
 $this->Title = 'Головна сторінка';
 ?>
 <link href="/css/site/site.css" rel="stylesheet">
@@ -46,17 +52,17 @@ $this->Title = 'Головна сторінка';
     <br>
     <div class="row">
         <div class="col-md-4 text-center">
-            <img src="/img/imgForAds/polipeh.png" alt="Creator 1" class="profile-img" style="border-radius: 15px">
+            <img src="/img/imgForAds/politeh.jpg" alt="Creator 1" class="profile-img" style="border-radius: 15px">
             <h3>Роботу виконав студент</h3>
             <p>Державного університету «Житомирська політехніка»</p>
         </div>
         <div class="col-md-4 text-center">
-            <img src="/img/imgForAds/FishDream.jpg" alt="Creator 2" class="profile-img" style="border-radius: 15px">
+            <img src="/img/imgForAds/Pizza.jpg" alt="Creator 2" class="profile-img" style="border-radius: 15px; width: 200px; height: 200px;">
             <h3>FishDream</h3>
             <p>Назва інтернет магазмну</p>
         </div>
         <div class="col-md-4 text-center">
-            <img src="/img/imgForAds/php.png" alt="Creator 3" class="profile-img" style="border-radius: 15px">
+            <img src="/img/imgForAds/php.jpg" alt="Creator 3" class="profile-img" style="border-radius: 15px">
             <h3>Мова програмування</h3>
             <p>На якій написано майже весь сайт</p>
         </div>

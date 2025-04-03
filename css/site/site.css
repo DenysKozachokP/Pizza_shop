@@ -1,0 +1,46 @@
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.about-us {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    margin-top: 100px; /* Відступ зверху */
+    border-radius: 10px;
+    border-color: #6b6f72;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.about-us h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+}

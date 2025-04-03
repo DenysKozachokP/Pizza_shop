@@ -1,4 +1,10 @@
 <?php
+/**
+ * @copyright 2025 Denys Kozachok
+ * @license GPL-3.0
+ * @license MIT
+ */
+
 /**@var string  $error_message Повідомлення про помилку*/
 $this->Title = 'Вхід На сайт';
 ?>
