@@ -1,4 +1,10 @@
 <?php
+/**
+ * @copyright 2025 Denys Kozachok
+ * @license GPL-3.0
+ * @license MIT
+ */
+
 use models\Products;
 $this->Title = 'Риболовні товари';
 if (isset($_GET['page'])){
